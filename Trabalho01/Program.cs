@@ -1,24 +1,9 @@
-﻿using System.Globalization;
+﻿decimal l, c, total;
+Console.Write("digite a base do terreno: ");
+l = Convert.ToDecimal(Console.ReadLine());
 
-Console.Write("digite o numero do més que estamos: ");
-int mes = Convert.ToInt32(Console.ReadLine());
-if (mes == 0)
-{
-    Console.WriteLine("Digite um més valido");
-    return;
-}
-mes = mes * 30;
+Console.Write("digite a altura do comprimento: ");
+c = Convert.ToDecimal(Console.ReadLine());
 
-Console.Write("digite o dia que estamos: ");
-int dia = Convert.ToInt32(Console.ReadLine());
-if (dia == 0)
-{
-    Console.WriteLine("Digite um dia valido");
-    return;
-}
-dia = dia + mes;
-
-Console.WriteLine($"ja se passaram {dia} Dias desdo começo do ano");
-    
-
-
+total = l * c;
+Console.Write($"o total foi {total} metros quadrados ");
