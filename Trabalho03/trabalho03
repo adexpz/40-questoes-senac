@@ -1,0 +1,26 @@
+﻿decimal pao, broas, total, poupan;
+Console.WriteLine("Digite a quantidade de pães vendidos");
+pao = Convert.ToInt32(Console.ReadLine());
+
+if (pao == 0)
+{
+    Console.WriteLine("Digite uma quantidade valida");
+    return;
+}
+Console.WriteLine("Digite a quantidade de broas vendidas");
+broas = Convert.ToInt32(Console.ReadLine());    
+
+ if (broas == 0)
+{
+    Console.WriteLine("digite uma quantidade valida");
+    return;
+}
+
+pao = pao * 0.12m;
+broas = broas * 1.50M;
+
+total = broas + pao;
+
+poupan = total / 10;
+
+Console.WriteLine($"o total de pães vendido foi {total} e dever ser guardado {poupan} ");
