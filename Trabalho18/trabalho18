@@ -1,0 +1,16 @@
+int horasNormais, horasExtras;
+int valorHoraNormal = 10;
+int valorHoraExtra = 15;
+double desconto = 0.10;
+
+Console.Write("Digite quantas horas normais ele trabalhou: ");
+horasNormais = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Digite quantas horas extra ele trabalhou: ");
+horasExtras = Convert.ToInt32(Console.ReadLine());
+
+int salarioBruto = (horasNormais * valorHoraNormal) + (horasExtras * valorHoraExtra);
+double salarioLiquido = salarioBruto * (1 - desconto);
+
+Console.WriteLine($"Salário bruto: R${salarioBruto}");
+Console.WriteLine($"Salário líquido: R${salarioLiquido:F2}");
