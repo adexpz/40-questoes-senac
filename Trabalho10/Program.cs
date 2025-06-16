@@ -12,8 +12,8 @@ ponty1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Digite o valor de y2: ");
 ponty2 = Convert.ToInt32(Console.ReadLine());
 
-double x = Math.Pow(pontx2 - pontx1, 2);
-double y = Math.Pow(ponty2 - ponty1, 2);
+double x = (pontx2 - pontx1, 2);
+double y = (ponty2 - ponty1, 2);
 
 double distancia = Math.Sqrt(x + y);
 
