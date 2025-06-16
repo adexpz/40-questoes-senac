@@ -1,0 +1,23 @@
+decimal litros, pagamentos, preço;
+
+Console.Write("Digite o preço da gasolina: ");
+preço = Convert.ToDecimal(Console.ReadLine());
+if (preço == 0)
+{
+    Console.WriteLine("digite uma quantidade valida");
+    return;
+}
+
+Console.Write(" digite a quantidade que deseja coloca: ");
+pagamentos = Convert.ToDecimal(Console.ReadLine());
+
+if (pagamentos == 0)
+{
+    Console.WriteLine("digie uma quantidade valida");
+    return;
+}
+
+litros = pagamentos / preço;
+
+
+Console.Write($"você ira conseguir coloca {litros} litros de gasolina ");
