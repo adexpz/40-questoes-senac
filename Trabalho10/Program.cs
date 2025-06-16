@@ -1,30 +1,21 @@
-﻿using System.Numerics;
-
 int pontx1, pontx2, ponty1, ponty2;
-Console.Write("digite o valor de x: ");
+
+Console.Write("Digite o valor de x1: ");
 pontx1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("digite o segundo valor de x: ");
+Console.Write("Digite o valor de x2: ");
 pontx2 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Digite o valor de y: ");
+Console.Write("Digite o valor de y1: ");
 ponty1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Digite o segundo valor de y: ");
+Console.Write("Digite o valor de y2: ");
 ponty2 = Convert.ToInt32(Console.ReadLine());
 
-decimal x = (pontx1 - pontx2) * (pontx1 - pontx2);
-decimal y = (ponty1 - ponty2) * (ponty1 - ponty2);
+double x = Math.Pow(pontx2 - pontx1, 2);
+double y = Math.Pow(ponty2 - ponty1, 2);
 
-decimal total = x + y;
+double distancia = Math.Sqrt(x + y);
 
-decimal raiz = 0;
-
-for (decimal i = 0; i * i <= total; i += 0.01m)
-{
-    raiz = i;
-}
-Console.WriteLine(raiz);
-
-
+Console.WriteLine($"Distância entre os pontos: {distancia:F2}");
 
