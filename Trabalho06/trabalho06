@@ -1,0 +1,8 @@
+﻿decimal preçototal, pratoc, kg = 12;
+Console.Write("digite o peço do prato do cliente: ");
+pratoc = Convert.ToDecimal(Console.ReadLine());
+
+
+preçototal = pratoc * 12;
+
+Console.WriteLine($"o valor a pagar é de  R$ {preçototal}  ");
