@@ -5,7 +5,7 @@ int parteFelipe;
 Console.Write("Digite o valor total da conta R$ : ");
 totalConta = Convert.ToDecimal(Console.ReadLine());
 
-parteFelipe = (int)Math.Ceiling(totalConta / 3);
+parteFelipe = (int)(totalConta / 3);
 decimal restante = totalConta - parteFelipe;
 parteCarlos = restante / 2;
 parteAndre = parteCarlos;
