@@ -8,4 +8,4 @@ cateto2 = Convert.ToDouble(Console.ReadLine());
 
 double hipotenusa = Math.Sqrt(cateto1 * cateto1 + cateto2 * cateto2);
 
-Console.WriteLine($"O valor da hipotenusa é {hipotenusa:F2}")
+Console.WriteLine($"O valor da hipotenusa é {hipotenusa:F2}");
